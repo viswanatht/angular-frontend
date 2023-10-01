@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav" *ngIf="loginSuccess">
+        <li class = "nav-item">
+            <a routerLink="invoice" routerLinkActive="active" class="nav-link" >Invoice</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="employees" routerLinkActive="active" class="nav-link" >Users</a>
+        </li>
+       
+    </ul>
+    <div class="collapse navbar-collapse justify-content-end">
+    <ul class = "navbar-nav navbar-right" position="end">
+        <li class = "nav-item">
+            <a routerLink="login" routerLinkActive="active" class="nav-link" >Login</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="logout" routerLinkActive="active" class="nav-link" >Logout</a>
+        </li>
+        </ul>
+    </div>
+</nav>
+
+<div class = "container">
+    <router-outlet></router-outlet>
+</div>
+<footer class = "footer">
+    <div class = "container">
+        <span>All Rights Reserved 2020 @JavaGuides</span>
+    </div>
+</footer>
+
